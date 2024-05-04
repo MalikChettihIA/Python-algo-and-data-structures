@@ -1,6 +1,7 @@
 # Inerstion Sort Python Implementation.
 # Worst case is in Θ(n*2)
 # Best case is in Θ(n)
+
 def insert_sort(A, n):
     for i in range(1, len(A)):
         key = A[i]
