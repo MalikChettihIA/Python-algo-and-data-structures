@@ -1,0 +1,15 @@
+from linked_list import LinkedList, Element
+
+L = LinkedList()
+L.insert(Element(3))
+L.insert(Element(8))
+L.insert(Element(5))
+L.insert(Element(10))
+L.insert(Element(7))
+L.insert(Element(6))
+L.insert(Element(2))
+L.insert(Element(9))
+L.insert(Element(5))
+L.show()
+L.removeIfLess()
+L.show()

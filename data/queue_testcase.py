@@ -1,0 +1,16 @@
+import queue
+
+Q = queue.Queue(10)
+Q.enqueue(15)
+Q.enqueue(6)
+Q.enqueue(2)
+Q.enqueue(9)
+Q.show()
+print("--")
+Q.enqueue(17)
+Q.enqueue(3)
+Q.show()
+print("--")
+Q.dequeue()
+Q.show()
+print("--")

@@ -11,6 +11,7 @@ class Heap:
         self.lenght = len(tab)
         self.v = tab
         self.heapsize = 0
+        self.nbMaxHeapify = 0
         
     def show(self):
         print("lenght = ", self.lenght)
@@ -18,6 +19,8 @@ class Heap:
         print("values = ", self.v)
         
     def max_heapify(self, i):
+        print("max_heapify -> ", i)
+        self.nbMaxHeapify +=1 
         l = left(i); r=right(i)
         
         if l < self.heapsize and self.v[l] > self.v[i]:

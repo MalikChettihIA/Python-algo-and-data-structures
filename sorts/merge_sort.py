@@ -13,7 +13,7 @@ def merge(A, p, q, r):
     L = A[p:q+1]; L.append(math.inf); i=0
     R = A[q+1:r+1]; R.append(math.inf); j=0
     
-    for k in range(p,r+1):
+    for k in range(p,r):
         if L[i] <= R[j]:
             A[k] = L[i]; i += 1
         else:

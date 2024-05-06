@@ -1,0 +1,16 @@
+from tree import Tree, Node
+
+T = Tree()
+T.root = Node(2)
+T.root.addLeftChild(11)
+T.root.addLeftChild(8)
+T.root.addLeftChild(6)
+T.root.leftChild.rightSibling.addLeftChild(4)
+T.root.leftChild.rightSibling.rightSibling.addLeftChild(9)
+print("--- Explore")
+T.root.explore()
+print("--- Explore Iterative")        
+T.root.iterativeExplore()
+print("--- Counts")        
+print("Count nbNode ", T.root.count())
+print("Count Leaves ", T.root.countLeaves())
